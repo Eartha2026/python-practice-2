@@ -2,3 +2,6 @@
 __pycache__/
 *.pyc
 .env
+# 补充下面两行，防止虚拟环境被上传
+venv/
+.venv/
