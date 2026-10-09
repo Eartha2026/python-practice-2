@@ -20,10 +20,10 @@ ERROR次数 = 0
 最长的一行 = ""
 
 with open("my_log.txt", "r", encoding="utf-8") as 文件:
-    for 行 in 文件: # 逐行读取
-        总行数 += 1
-        行 = 行.strip() # 去掉末尾的换行符
-        if "ERROR" in 行: # 包含 ERROR 关键字
+    for 行 in 文件:  # 逐行读取
+        总行数 += 1  # 每读一行，计数器加1
+        行 = 行.strip()  # 去掉末尾的换行符
+        if "ERROR" in 行:  # 如果这一行包含 ERROR 关键字
             ERROR次数 += 1
         if len(行) > len(最长的一行): # 找最长的一行
             最长的一行 = 行
