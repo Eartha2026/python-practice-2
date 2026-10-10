@@ -1,0 +1,12 @@
+# Day22.py Agent Loop（智能体循环）
+# 逻辑：AI循环执行“思考 -> 行动 -> 观察”，直到任务完成。
+print("--- Day 22: Agent Loop 智能体循环 ---")
+messages = [{"role": "user", "content": "帮我写一段代码"}]
+while True:
+    print("  [思考] 我要调用工具写代码。")
+    print("  [行动] 调用工具: write_file")
+    print("  [观察] 文件写入成功。")
+    messages.append({"role": "user", "content": "工具结果: 写入成功"})
+    print("  [思考] 任务完成，结束循环。")
+    break
+print("✅ 达成：能说出 Agent 在干嘛、进行到第几步。")
